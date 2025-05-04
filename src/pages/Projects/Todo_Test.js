@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function Todo_Test() {
+  let navigate = useNavigate()
   const [postData, setPostData] = useState({
     title: '',
     price: '',
@@ -35,8 +37,14 @@ function Todo_Test() {
   }
   return (
     <div className="p-8 min-h-screen bg-gray-900 text-gray-100">
-      <h1 className="text-3xl font-bold mb-6 text-center text-cyan-400">📝 Product Management</h1>
 
+      <h1 className="text-3xl font-bold mb-6 text-center text-cyan-400">📝 Product Management</h1>
+      <button
+          onClick={() => navigate("/")}
+          className="mb-4 px-4 py-2 w-[200px]  bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+        >
+          Go to Home Page
+        </button>
       <div className="flex flex-wrap gap-4 mb-8 justify-center">
         <input
           value={postData.title}

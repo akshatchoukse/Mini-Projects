@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function TicTacToe() {
+ let navigate = useNavigate()
   const [turn, setTurn] = useState(1);
   const [block1, setblock1] = useState('');
   const [block2, setblock2] = useState('');
@@ -148,6 +150,12 @@ function TicTacToe() {
   <div className="mt-4 text-white text-center text-lg">
     Made by Akshat Choukse
   </div>
+  <button
+          onClick={() => navigate("/")}
+          className="mb-4 px-4 py-2 w-[200px]  bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+        >
+          Go to Home Page
+        </button>
     </div>
     
   );

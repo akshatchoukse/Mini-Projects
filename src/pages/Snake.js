@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Snake() {
   const [dice, setDice] = useState("")
   const [turn, setTurn] = useState(1)
   const [p1, setP1] = useState(0)
   const [p2, setP2] = useState(0)
+  let navigate = useNavigate()
   const throwDice = ()=>{
     let diceValue = Math.ceil(Math.random()*1)
     setDice(diceValue)
@@ -54,6 +56,12 @@ function Snake() {
         <div className={p1 == 5 && p2 == 5 ? 'both' : p1 == 5 ? 'goti1' : p2== 5 ? 'goti2' : 'block'}>5</div>
         <div className={p1 == 6 && p2 == 6 ? 'both' : p1 == 6 ? 'goti1' : p2== 6 ? 'goti2' : 'block'}>6</div>
       </div>
+      <button
+          onClick={() => navigate("/")}
+          className="mb-4 px-4 py-2 w-[200px]  bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+        >
+          Go to Home Page
+        </button>
       <div>
         Player1: {p1}
       </div>

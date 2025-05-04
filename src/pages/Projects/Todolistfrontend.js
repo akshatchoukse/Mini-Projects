@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Todolistfrontend() {
   const [productObj, setProductObj] = useState({
@@ -8,6 +9,7 @@ function Todolistfrontend() {
     description: "",
     color: ""
   });
+  let navigate  = useNavigate()
   const [allItems, setAllItems] = useState([]);
   const [updateIndex, setUpdateIndex] = useState("");
 
@@ -41,6 +43,12 @@ function Todolistfrontend() {
     // ... same React code logic
 
 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+<button
+          onClick={() => navigate("/")}
+          className="mb-4 px-4 py-2 w-[200px]  bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+        >
+          Go to Home Page
+        </button>
   <div className="bg-white shadow-lg p-6 rounded-2xl mb-10 flex flex-wrap gap-4 items-end">
     <input
       value={productObj.title}

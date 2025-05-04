@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Calculator() {
-  const [value, setvalue] = useState('')
+  const [value, setvalue] = useState('');
+  let navigate = useNavigate();
 
   return (
     <div className="h-[100vh] w-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300">
+      <button
+          onClick={() => navigate("/")}
+          className="mb-4 px-4 py-2 w-[200px]  bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+        >
+          Go to Home Page
+        </button>
       <div className="bg-gray-900 text-white rounded-xl shadow-2xl p-4 w-[320px]">
         
         <div className="bg-black text-right text-3xl font-mono p-4 rounded mb-4 min-h-[60px]">
@@ -41,7 +49,7 @@ function Calculator() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Calculator
+export default Calculator;

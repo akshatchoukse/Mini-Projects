@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function SnakeLadder() {
-   
+   let navigate = useNavigate()
   let [dice,setdice] = useState('')
   let [p1,setp1] = useState(0)
   let [p2,setp2] = useState(0)
@@ -96,7 +97,12 @@ function SnakeLadder() {
         {p1==27? setTimeout(()=> {setp1(1)},250):null}
         {p2 == 27 ? setTimeout(()=> {setp2(1)},250):null}
         {p1>= 30 ? setTimeout(()=> {alert('Player 1 win')},500) : p2 >= 30 ? setTimeout(()=> {alert('Player 2 win')},500):null}
-        
+        <button
+          onClick={() => navigate("/")}
+          className="mb-4 px-4 py-2 w-[200px]  bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+        >
+          Go to Home Page
+        </button>
     </div>
   )
 }
