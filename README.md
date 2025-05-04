@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Mini Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A collection of beginner-friendly **React.js** mini projects created using `npx create-react-app` and styled with **Tailwind CSS**. Each project demonstrates essential React concepts, interactive functionality, and clean UI design. These projects are perfect for learning and practicing frontend development.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📂 Projects
 
-### `npm start`
+### 🧮 **Calculator**
+A simple calculator that handles basic arithmetic operations with a clean, responsive design.  
+**Features:**
+- Addition, subtraction, multiplication, division
+- Clear and backspace buttons
+- Stylish UI with Tailwind CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🕒 **Analog Clock**
+A real-time analog clock with smoothly moving hour, minute, and second hands.  
+**Features:**
+- Live clock that updates every second
+- Clean and minimal design
+- Tailwind CSS for modern look and feel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🎲 **Snake & Ladder Game**
+A classic Snake & Ladder board game implemented with React's state management and game logic.  
+**Features:**
+- Two-player support
+- Animated dice roll
+- Visual representation of the game board
 
-### `npm test`
+### ❌⭕ **XO Game (Tic-Tac-Toe)**
+A simple two-player tic-tac-toe game with an interactive UI.  
+**Features:**
+- X and O symbols for the players
+- Winning and draw conditions
+- Responsive design using Tailwind CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ **To-Do List**
+A task manager that allows users to add, edit, and delete tasks.  
+**Features:**
+- Add, edit, and delete tasks
+- Task list management
+- Stylish, minimal interface
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have **Node.js** and **npm** installed. You can check if they're installed by running the following commands in your terminal:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+node -v
+npm -v
